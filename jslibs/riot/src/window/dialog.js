@@ -47,6 +47,7 @@ riot.window = (function() {
 				}
 				hideElements('object', dialog.box);
 				hideElements('embed', dialog.box);
+				hideElements('iframe', dialog.box);
 			}
 			overlay.style.zIndex = zIndex-1;
 		}
@@ -71,6 +72,7 @@ riot.window = (function() {
 				}
 				showElements('object');
 				showElements('embed');
+				showElements('iframe');
 				Element.remove(overlay);
 			}
 		}
